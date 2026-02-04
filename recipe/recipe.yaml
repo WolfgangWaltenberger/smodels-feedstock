@@ -3,8 +3,8 @@ schema_version: 1
 context:
   name: smodels
   version: "3.1.1"
-  # Python 3.8 enforced by numpy requirement
-  python_min: "3.8"
+  # Python 3.9 enforced by numpy requirement
+  python_min: "3.9"
 
 package:
   name: ${{ name|lower }}
@@ -32,7 +32,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - docutils >=0.3
-    - numpy >=1.22.0
+    - numpy >=2.0.0
     - scipy >=1.0.0,!=1.16.0,!=1.16.1,!=1.16.2
     - sympy >=1.0.0
     - unum >=4.0.0
